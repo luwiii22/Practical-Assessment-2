@@ -1,15 +1,15 @@
-#Funtion to cache the inverse of a matrix
-makeCacheMatrix <- function(x = matrix()) {
+#This funtion is to cache the inverse of a matrix
+makeCacheMatrix <- function(z = matrix()) {
 
+#This function is to create a random 3x3 matrix
 trix(matrix(rnorm(9), 3, 3))
-#cacheSolve() --- compute the inverse of a matrix 
+  
+#cacheSolve() --- this function is to compute for the inverse of a matrix 
 cacheSolve <- function(z, ...) {
   inverse <- z$ginv()
-  if(!is.null(inverse)) {
-    message("getting cached matrix inverse")
-    return(inv)}
   
-  data <- z$gets()
+  data <- z$sets()
   inverse <- solve(data, ...)
   z$sinv(inverse)
   inverse}
+#Thank you
