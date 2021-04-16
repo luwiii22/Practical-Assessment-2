@@ -1,15 +1,26 @@
-#This funtion is to cache the inverse of a matrix
-makeCacheMatrix <- function(z = matrix()) {
+#This is a function to both store an inverse of a matrix
+#and create a unique matrix 
+MakeCMatr <- function(z = matrix())
+#We begin by
+  m <- NULL
+  s1 <- function(matrix){z<<-matrix m <<- NULL}
+  g1 <- function()
+    s2<-function(inverse)
+      {m <<-inverse}
+    g2<-function()
 
-#This function is to create a random 3x3 matrix
-trix(matrix(rnorm(9), 3, 3))
-  
-#cacheSolve() --- this function is to compute for the inverse of a matrix 
-cacheSolve <- function(z, ...) {
-  inverse <- z$ginv()
-  
-  data <- z$sets()
-  inverse <- solve(data, ...)
-  z$sinv(inverse)
-  inverse}
-#Thank you
+list(s1=s1, g1=g1, s2=s2, g2=g2)
+
+#Now, we cache the values...
+CSolve<- function(z,...)
+#and get back to z = matrix() which is the inverse of a new variable called y
+  m<-y$g2()
+#However...
+if(!is.NULL(z)) 
+#A text will display as "obtaining cached data"
+  return(z)
+
+data<-y$g1()
+#to show the inverse
+z<-solve(data)%%data
+y$s2(z) #This is what was introduced previously
